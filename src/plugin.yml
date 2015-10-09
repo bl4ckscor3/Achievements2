@@ -1,0 +1,23 @@
+name: Achievements2
+main: bl4ckscor3.plugin.achievements2.core.Achievements2
+version: 1.0
+author: [bl4ckscor3]
+depend: [bl4ckkitCore]
+description: A complete rewrite of Achievements for BreakIn' Bad!
+commands:
+    a:
+        description: Shows the achievements of a player.
+        usage: /<command> [playername]
+    atrack:
+        description: Shows an achievement inventory with the amount of players who already obtained that achievement.
+        usage: /<command>
+permissions:
+    achievements.others.view:
+        description: Allows people to view other's achievements.
+        default: op
+    achievements.others.manage:
+        description: Allows people to give achievements or take achievements away from others or themselves.
+        default: op
+    achievements.atrack:
+        description: Allows people to view the global achievement progress.
+        default: op
